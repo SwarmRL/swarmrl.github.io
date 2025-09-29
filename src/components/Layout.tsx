@@ -9,7 +9,6 @@ const links = [
   { to: "/use-cases", label: "Use Cases" },
   { to: "/demos", label: "Demos" },
   { to: "/research", label: "Research" },
-  { to: "/community", label: "Community" },
   { to: "/contact", label: "Contact" },
 ];
 
@@ -34,7 +33,6 @@ export default function Layout() {
             <p>© {new Date().getFullYear()} SwarmRL</p>
             <div className="flex gap-4">
               <a href="https://github.com/SwarmRL/SwarmRL" className="hover:text-accent">GitHub</a>
-              <a href="/community" className="hover:text-accent">Community</a>
               <a href="/research" className="hover:text-accent">Research</a>
             </div>
           </div>

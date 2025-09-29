@@ -6,7 +6,6 @@ import Overview from "./pages/Overview";
 import UseCases from "./pages/UseCases";
 import Demos from "./pages/Demos";
 import Research from "./pages/Research";
-import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 
 export default function App() {
@@ -18,7 +17,6 @@ export default function App() {
         <Route path="/use-cases" element={<UseCases />} />
         <Route path="/demos" element={<Demos />} />
         <Route path="/research" element={<Research />} />
-        <Route path="/community" element={<Community />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>
