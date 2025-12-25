@@ -1,14 +1,19 @@
+import SwarmBackground from "../components/SwarmBackground";
+
 export default function Home() {
   return (
-    <main className="relative overflow-hidden">
-      {/* Soft radial glow */}
+    <main className="relative overflow-hidden min-h-screen">
+      {/* Interactive Swarm Background */}
+      <SwarmBackground />
+      
+      {/* Soft radial glow overlay for readability */}
       <div
         className="pointer-events-none absolute inset-0
                    bg-[radial-gradient(60%_60%_at_50%_0%,rgba(56,189,248,.12),transparent_70%)]"
         aria-hidden="true"
       />
 
-      <section className="mx-auto max-w-6xl px-6 py-16 md:px-8 md:py-24 lg:py-28">
+      <section className="mx-auto max-w-6xl px-6 py-16 md:px-8 md:py-24 lg:py-28 relative z-10">
         <header>
           <h1 className="text-balance font-semibold tracking-tight
                          text-4xl md:text-6xl [text-wrap:balance]">
@@ -16,7 +21,7 @@ export default function Home() {
             <br className="hidden md:block" />
             smart active systems
           </h1>
-          <p className="mt-4 max-w-2xl text-muted">
+          <p className="mt-4 max-w-2xl text-muted text-lg">
             Build, train, and evaluate swarms across simulation and experiment with a unified, Pythonic API.
           </p>
         </header>
@@ -36,7 +41,7 @@ export default function Home() {
             href="https://github.com/SwarmRL/SwarmRL"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-xl px-5 py-3 border border-white/10
+            className="rounded-xl px-5 py-3 border border-white/10 bg-black/20 backdrop-blur-sm
                        hover:bg-white/5 focus:outline-none
                        focus-visible:ring-2 focus-visible:ring-white/40
                        transition"
@@ -46,24 +51,18 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Media slot (optional): cartoon robots video or Lottie */}
-        <div className="mt-12">
-          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl border border-white/10">
-            {/* Replace with your generated video. Keep it light! */}
-            <video
-              className="h-full w-full object-cover"
-              autoPlay
-              muted
-              loop
-              playsInline
-              poster="/media/robots-poster.jpg"
-            >
-              <source src="/media/robots-hero.mp4" type="video/mp4" />
-              {/* Fallback text */}
-              Your browser does not support the video tag.
-            </video>
-
-            {/* Reduced motion: hide/pause video via CSS (see note below) */}
+        {/* Media slot placeholder */}
+        <div className="mt-16">
+          <div className="relative w-full max-w-4xl mx-auto rounded-2xl border border-white/10 bg-white/5 p-8 text-center backdrop-blur-md">
+             <div className="py-12">
+                <p className="text-xl font-semibold text-white/80">Visualizing Swarm Intelligence</p>
+                <p className="mt-2 text-muted">Comprehensive simulation gallery and benchmarks coming soon.</p>
+                <div className="mt-6 flex justify-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-accent animate-pulse"></span>
+                    <span className="h-2 w-2 rounded-full bg-accent animate-pulse delay-75"></span>
+                    <span className="h-2 w-2 rounded-full bg-accent animate-pulse delay-150"></span>
+                </div>
+             </div>
           </div>
         </div>
       </section>

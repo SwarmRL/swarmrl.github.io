@@ -1,5 +1,6 @@
 // src/pages/Overview.tsx
 import { Section, Card, Container, Muted } from "../components/ui";
+import ArchitectureDiagram from "../components/ArchitectureDiagram";
 
 export default function Overview() {
   return (
@@ -22,10 +23,29 @@ export default function Overview() {
         </div>
       </Section>
       <Section title="Architecture">
-        <Container className="max-w-3xl">
-          <div className="space-y-3 text-muted">
-            <p>• Environments → Agents → Policies → Trainers → Evaluators</p>
-            <p>• Clear interfaces make it easy to extend and swap components.</p>
+        <Container className="max-w-4xl">
+          <div className="space-y-3 text-muted mb-8">
+            <p>
+              SwarmRL connects rigorous physics simulations (like EspressoMD) with modern deep learning frameworks (JAX).
+              This separation ensures that your training loop remains performant while the environment stays physically accurate.
+            </p>
+          </div>
+          
+          <ArchitectureDiagram />
+
+          <div className="grid md:grid-cols-2 gap-6 mt-8">
+             <div className="space-y-2">
+                <h4 className="font-semibold text-white">Environment</h4>
+                <p className="text-sm text-muted">
+                    Calculates physics steps, handles collisions, and manages the simulation state (positions, velocities, forces).
+                </p>
+             </div>
+             <div className="space-y-2">
+                <h4 className="font-semibold text-white">Agent / Policy</h4>
+                <p className="text-sm text-muted">
+                    Receives local observations (e.g., neighbor positions, chemical gradients) and outputs actions (forces/torques).
+                </p>
+             </div>
           </div>
         </Container>
       </Section>

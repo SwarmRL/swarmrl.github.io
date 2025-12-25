@@ -16,7 +16,7 @@ const links = [
 
 export default function Layout() {
   return (
-    <div className="min-h-dvh flex flex-col bg-background text-text">
+    <div className="min-h-dvh flex flex-col text-text">
       <header
         className="border-b border-white/10 bg-background/80 backdrop-blur
                    supports-[backdrop-filter]:bg-background/60"
