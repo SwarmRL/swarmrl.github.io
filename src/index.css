@@ -5,6 +5,22 @@
 
 /* Tailwind v4 design tokens */
 @theme {
+  /* Light mode tokens (default) */
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-text: #0f172a;
+  --color-muted: #475569;
+  --color-border: color-mix(in oklab, black 12%, transparent);
+  --color-accent: #38bdf8;
+  --color-accent-2: #7c3aed;
+
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+  --ring-accent: 0 0 0 6px color-mix(in oklab, var(--color-accent) 20%, transparent);
+}
+
+/* Dark mode overrides */
+html.dark {
   --color-background: #0f172a;
   --color-surface: #0b1224;
   --color-text: #f1f5f9;
@@ -12,10 +28,8 @@
   --color-border: color-mix(in oklab, white 12%, transparent);
   --color-accent: #38bdf8;
   --color-accent-2: #a78bfa;
-
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
-  --ring-accent: 0 0 0 6px color-mix(in oklab, var(--color-accent) 20%, transparent);
 }
 
-body { @apply bg-background text-text font-sans; }
+body {
+  @apply bg-background text-text font-sans;
+}
