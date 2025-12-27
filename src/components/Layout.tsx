@@ -23,11 +23,19 @@ export default function Layout() {
       >
         <Container className="py-4">
           <nav className="flex items-center justify-between gap-6">
-            {/* Left: links */}
-            <div className="flex items-center gap-6">
-              {links.map((l) => (
-                <NavItem key={l.to} to={l.to} label={l.label} />
-              ))}
+            <div className="flex items-center gap-8">
+              {/* Logo */}
+              <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+                <img src="/logo.jpg" alt="SwarmRL Logo" className="h-8 w-auto rounded-md" />
+                <span className="font-semibold text-lg hidden sm:block">SwarmRL</span>
+              </a>
+
+              {/* Left: links */}
+              <div className="hidden md:flex items-center gap-6">
+                {links.map((l) => (
+                  <NavItem key={l.to} to={l.to} label={l.label} />
+                ))}
+              </div>
             </div>
 
             {/* Right: actions */}
