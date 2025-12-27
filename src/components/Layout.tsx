@@ -1,5 +1,4 @@
 // src/components/Layout.tsx
-import * as React from "react";
 import { Outlet } from "react-router-dom";
 import { Container, NavItem } from "./ui";
 import ThemeToggle from "./ThemeToggle";

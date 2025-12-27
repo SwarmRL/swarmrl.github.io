@@ -62,16 +62,40 @@ export function Muted({
   }
   
   // Allow extra classes on Code
-  export function Code({
-    children,
-    className = "",
-  }: React.PropsWithChildren<{ className?: string }>) {
-    return (
-      <code className={`px-2 py-1 rounded-lg bg-black/30 border border-white/10 font-mono text-sm ${className}`}>
-        {children}
-      </code>
-    );
-  }
+export function Code({
+  children,
+  className = "",
+}: React.PropsWithChildren<{ className?: string }>) {
+  return (
+    <code className={`px-2 py-1 rounded-lg bg-muted/10 border border-border font-mono text-sm text-text ${className}`}>
+      {children}
+    </code>
+  );
+}
+
+export function CodeBlock({
+  title,
+  children,
+  className = "",
+}: React.PropsWithChildren<{ title?: string; className?: string }>) {
+  return (
+    <div className={`rounded-2xl border border-border bg-surface overflow-hidden ${className}`}>
+      <div className="flex items-center justify-between px-4 py-2 bg-muted/10 border-b border-border">
+        <span className="text-xs font-mono text-muted">{title || "Terminal"}</span>
+        <div className="flex gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-500/20 border border-red-500/50" />
+          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/20 border border-yellow-500/50" />
+          <div className="w-2.5 h-2.5 rounded-full bg-green-500/20 border border-green-500/50" />
+        </div>
+      </div>
+      <div className="p-4 overflow-x-auto">
+        <pre className="text-sm font-mono leading-relaxed text-text">
+          <code>{children}</code>
+        </pre>
+      </div>
+    </div>
+  );
+}
   
   // (Optional) Allow extra classes on A too
   export function A({

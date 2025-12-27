@@ -1,5 +1,5 @@
 // src/pages/Research.tsx
-import { Section, Card, Muted, A, Code } from "../components/ui";
+import { Section, Card, Muted, A, CodeBlock } from "../components/ui";
 
 const bibArxiv = `@article{tovey2024swarmrl,
   title={SwarmRL: Building the Future of Smart Active Systems},
@@ -68,9 +68,7 @@ export default function Research() {
       </Section>
 
       <Section title="BibTeX">
-        <Card>
-          <pre className="text-sm overflow-auto"><code>{bibArxiv}</code></pre>
-        </Card>
+        <CodeBlock title="BibTeX">{bibArxiv}</CodeBlock>
       </Section>
     </>
   );
