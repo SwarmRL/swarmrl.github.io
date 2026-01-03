@@ -17,9 +17,7 @@ export default function Home() {
         <header>
           <h1 className="text-balance font-semibold tracking-tight
                          text-4xl md:text-6xl [text-wrap:balance]">
-            SwarmRL — multi-agent RL for
-            <br className="hidden md:block" />
-            smart active systems
+            SwarmRL — multi-agent RL for <br className="hidden md:block" /> smart active systems
           </h1>
           <p className="mt-4 max-w-2xl text-muted text-lg">
             Build, train, and evaluate swarms across simulation and experiment with a unified, Pythonic API.
