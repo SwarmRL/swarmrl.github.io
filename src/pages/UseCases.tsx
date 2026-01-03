@@ -114,6 +114,43 @@ export default function UseCases() {
           </Card>
         </div>
       </Section>
+
+      <Section title="Targeted Applications" className="bg-muted/5 dark:bg-white/5">
+        <div className="grid md:grid-cols-3 gap-8">
+            <div className="space-y-4">
+                <div className="h-10 w-10 rounded-lg bg-red-500/10 flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-red-400 rounded-full" />
+                </div>
+                <h4 className="text-lg font-semibold">Medical Robotics</h4>
+                <Muted>
+                    Targeted cancer therapies, assisted drug delivery, and minimally invasive surgery.
+                    SwarmRL enables the training of policies for these high-stakes, constrained environments.
+                </Muted>
+            </div>
+
+            <div className="space-y-4">
+                <div className="h-10 w-10 rounded-lg bg-emerald-500/10 flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-emerald-400 rotate-45" />
+                </div>
+                <h4 className="text-lg font-semibold">Biological Modeling</h4>
+                <Muted>
+                    Reproduce complex biological phenomena like assisted fertilization and plant pollination.
+                    Understand emergent behavior in natural swarms through simulation.
+                </Muted>
+            </div>
+
+            <div className="space-y-4">
+                <div className="h-10 w-10 rounded-lg bg-orange-500/10 flex items-center justify-center">
+                    <div className="w-5 h-5 bg-orange-400 rounded-sm" />
+                </div>
+                <h4 className="text-lg font-semibold">Search & Rescue</h4>
+                <Muted>
+                    Coordinate micro-agent swarms for environmental monitoring, ecosystem defense, and
+                    search-and-rescue operations in hazardous environments.
+                </Muted>
+            </div>
+        </div>
+      </Section>
     </>
   );
 }

@@ -13,9 +13,9 @@ export default function Overview() {
                     Overview
                 </h1>
                 <p className="text-xl text-muted leading-relaxed">
-                    SwarmRL connects rigorous physics simulations with modern deep learning frameworks. 
+                    SwarmRL connects rigorous physics simulations with modern control frameworks. 
                     It bridges the gap between <span className="text-accent">EspressoMD</span> physics and <span className="text-accent">JAX</span>-based learning, 
-                    enabling reproducible research in multi-agent systems.
+                    supporting both classical control and deep reinforcement learning.
                 </p>
             </div>
         </Container>
@@ -27,9 +27,9 @@ export default function Overview() {
             <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 group-hover:bg-blue-500/20 transition-colors">
                 <div className="w-6 h-6 border-2 border-blue-400 rounded-full" />
             </div>
-            <h3 className="text-xl font-semibold mb-3">Multi-agent RL</h3>
+            <h3 className="text-xl font-semibold mb-3">Multi-agent Control</h3>
             <Muted>
-                Train decentralized policies across heterogeneous agents. 
+                Train decentralized policies using deep RL or implement classical heuristics. 
                 Scale from a few particles to thousands of interacting entities with efficient JAX-based learning loops.
             </Muted>
           </Card>
