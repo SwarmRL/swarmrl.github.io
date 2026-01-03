@@ -1,5 +1,5 @@
 // src/pages/Demos.tsx
-import { Section, CodeBlock, Button, A, Container, Card } from "../components/ui";
+import { Section, CodeBlock, Button, A, Card } from "../components/ui";
 
 function Video({ id, title }: { id: string; title: string }) {
   return (
@@ -22,21 +22,19 @@ export default function Demos() {
     <>
       <Section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent pointer-events-none" />
-        <Container>
-            <div className="max-w-3xl">
-                <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                    Demos
-                </h1>
-                <p className="text-xl text-muted leading-relaxed">
-                    Explore small, reproducible examples and watch SwarmRL agents in action.
-                </p>
-            </div>
-        </Container>
+        <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
+                Demos
+            </h1>
+            <p className="text-xl text-muted leading-relaxed">
+                Explore small, reproducible examples and watch SwarmRL agents in action.
+            </p>
+        </div>
       </Section>
 
       <Section>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <div className="space-y-8">
+            <div className="space-y-8 min-w-0">
                 <div className="flex items-center gap-3 mb-2">
                     <span className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center text-accent font-bold">1</span>
                     <h2 className="text-2xl font-bold">Quickstart Training</h2>
@@ -105,7 +103,7 @@ export default function Demos() {
                 </div>
             </div>
 
-            <div className="space-y-8 lg:sticky lg:top-24">
+            <div className="space-y-8 lg:sticky lg:top-24 min-w-0">
                 <div className="flex items-center gap-3 mb-2">
                     <span className="w-8 h-8 rounded-lg bg-purple-500/20 flex items-center justify-center text-purple-400 font-bold">2</span>
                     <h2 className="text-2xl font-bold">Video Showcase</h2>
