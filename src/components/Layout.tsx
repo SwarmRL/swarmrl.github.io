@@ -50,23 +50,10 @@ export default function Layout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-white/10">
+      <footer className="border-t border-white/10 dark:border-white/10 border-muted/20">
         <Container className="py-10 text-sm text-muted">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <p>© {new Date().getFullYear()} SwarmRL</p>
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/SwarmRL/SwarmRL"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-accent"
-              >
-                GitHub
-              </a>
-              <a href="/research" className="hover:text-accent">
-                Research
-              </a>
-            </div>
           </div>
         </Container>
       </footer>
