@@ -26,7 +26,7 @@ export function Section({
 
 export function Card({ children, className = "" }: React.PropsWithChildren<{ className?: string }>) {
   return (
-    <div className={`rounded-2xl border border-white/10 bg-white/5 p-6 ${className}`}>{children}</div>
+    <div className={`rounded-2xl border border-white/10 dark:border-white/10 bg-white/5 dark:bg-white/5 p-6 ${className}`}>{children}</div>
   );
 }
 
@@ -47,7 +47,7 @@ export function Button({
     variant === "accent"
       ? "bg-accent text-black font-semibold shadow-[0_0_30px_rgba(56,189,248,.25)]"
       : variant === "outline"
-      ? "border border-white/10 hover:bg-white/5"
+      ? "border border-muted/20 dark:border-white/10 hover:bg-muted/10 dark:hover:bg-white/5 text-text"
       : "bg-accent/10 text-accent border border-accent/30 hover:bg-accent/20";
   if (href) return <a href={href} className={`${base} ${styles} ${className}`}>{children}</a>;
   return <button onClick={onClick} className={`${base} ${styles} ${className}`}>{children}</button>;

@@ -58,41 +58,41 @@ export default function Overview() {
         </div>
       </Section>
 
-      <Section title="System Architecture" className="bg-white/5">
+      <Section title="System Architecture" className="bg-muted/5 dark:bg-white/5">
         <Container className="max-w-5xl">
           <div className="grid lg:grid-cols-5 gap-12 items-center">
             <div className="lg:col-span-3">
-                 <div className="rounded-2xl border border-white/10 bg-black/20 p-8 shadow-2xl">
+                 <div className="rounded-2xl border border-muted/20 dark:border-white/10 bg-white/50 dark:bg-black/20 p-8 shadow-2xl backdrop-blur-sm">
                     <ArchitectureDiagram />
                  </div>
             </div>
             
             <div className="lg:col-span-2 space-y-8">
                 <div className="space-y-3">
-                    <h4 className="text-lg font-semibold text-white flex items-center gap-3">
+                    <h4 className="text-lg font-semibold text-text flex items-center gap-3">
                         <span className="flex h-3 w-3 relative">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                           <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                         </span>
                         Environment
                     </h4>
-                    <p className="text-muted leading-relaxed pl-6 border-l border-white/10 ml-1.5">
+                    <p className="text-muted leading-relaxed pl-6 border-l border-muted/20 dark:border-white/10 ml-1.5">
                         Calculates physics steps, handles collisions, and manages the simulation state (positions, velocities, forces). 
                         Powered by <strong>EspressoMD</strong> for high-fidelity physics.
                     </p>
                 </div>
                 
-                <div className="w-full h-px bg-white/10" />
+                <div className="w-full h-px bg-muted/10 dark:bg-white/10" />
 
                 <div className="space-y-3">
-                    <h4 className="text-lg font-semibold text-white flex items-center gap-3">
+                    <h4 className="text-lg font-semibold text-text flex items-center gap-3">
                         <span className="flex h-3 w-3 relative">
                           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                           <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                         </span>
                         Agent / Policy
                     </h4>
-                    <p className="text-muted leading-relaxed pl-6 border-l border-white/10 ml-1.5">
+                    <p className="text-muted leading-relaxed pl-6 border-l border-muted/20 dark:border-white/10 ml-1.5">
                         Receives local observations (e.g., neighbor positions, chemical gradients) and outputs actions (forces/torques).
                         Optimized with <strong>JAX</strong> for rapid training.
                     </p>

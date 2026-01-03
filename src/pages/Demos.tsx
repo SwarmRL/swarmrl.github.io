@@ -112,8 +112,8 @@ export default function Demos() {
                 
                 <Video id="b7NRddDScdM" title="SwarmRL overview" />
                 
-                <div className="p-6 rounded-2xl bg-white/5 border border-white/10">
-                    <h3 className="font-semibold mb-2">About this demo</h3>
+                <div className="p-6 rounded-2xl bg-muted/5 border border-white/10 dark:bg-white/5 dark:border-white/10">
+                    <h3 className="font-semibold mb-2 text-text">About this demo</h3>
                     <p className="text-muted text-sm leading-relaxed mb-4">
                         This video demonstrates various swarm behaviors emerging from trained policies, 
                         including gradient sensing and collective transport tasks.

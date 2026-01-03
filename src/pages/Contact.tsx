@@ -31,25 +31,25 @@ export default function Contact() {
             </div>
             
             <div className="space-y-4 flex-grow">
-                <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                <div className="p-4 rounded-xl bg-muted/5 border border-muted/20 dark:border-white/10 dark:bg-white/5 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-medium text-white">GitHub Repository</span>
+                        <span className="font-medium text-text">GitHub Repository</span>
                         <A to="https://github.com/SwarmRL/SwarmRL" className="text-sm">View Code</A>
                     </div>
                     <p className="text-sm text-muted">Star, fork, or contribute to the project.</p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                <div className="p-4 rounded-xl bg-muted/5 border border-muted/20 dark:border-white/10 dark:bg-white/5 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-medium text-white">Issues & Support</span>
+                        <span className="font-medium text-text">Issues & Support</span>
                         <A to="https://github.com/SwarmRL/SwarmRL/issues" className="text-sm">Open Issue</A>
                     </div>
                     <p className="text-sm text-muted">Report bugs or request new features.</p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                <div className="p-4 rounded-xl bg-muted/5 border border-muted/20 dark:border-white/10 dark:bg-white/5 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-medium text-white">Documentation</span>
+                        <span className="font-medium text-text">Documentation</span>
                         <A to="https://swarmrl.github.io/SwarmRL.ai/" className="text-sm">Read Docs</A>
                     </div>
                     <p className="text-sm text-muted">Comprehensive guides and API references.</p>
@@ -69,17 +69,17 @@ export default function Contact() {
             </div>
             
              <div className="space-y-4 flex-grow">
-                <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                <div className="p-4 rounded-xl bg-muted/5 border border-muted/20 dark:border-white/10 dark:bg-white/5 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-medium text-white">Academic Paper</span>
+                        <span className="font-medium text-text">Academic Paper</span>
                         <A to="https://arxiv.org/abs/2404.16388" className="text-sm">Read on arXiv</A>
                     </div>
                     <p className="text-sm text-muted">The foundational paper describing SwarmRL.</p>
                 </div>
 
-                <div className="p-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors">
+                <div className="p-4 rounded-xl bg-muted/5 border border-muted/20 dark:border-white/10 dark:bg-white/5 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
                     <div className="flex justify-between items-center mb-1">
-                        <span className="font-medium text-white">University News</span>
+                        <span className="font-medium text-text">University News</span>
                         <A to="https://www.icp.uni-stuttgart.de/news/news/SwarmRL-building-the-future-of-smart-active-systems/" className="text-sm">Read Article</A>
                     </div>
                     <p className="text-sm text-muted">University of Stuttgart press coverage.</p>

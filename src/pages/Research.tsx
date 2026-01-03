@@ -43,12 +43,12 @@ export default function Research() {
             </Muted>
 
             <div className="flex flex-col gap-3">
-                <div className="flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/10">
-                    <span className="text-sm font-medium">Read on arXiv</span>
+                <div className="flex items-center justify-between p-3 rounded-lg bg-muted/5 border border-white/10 dark:bg-white/5 dark:border-white/10 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
+                    <span className="text-sm font-medium text-text">Read on arXiv</span>
                     <A to="https://arxiv.org/abs/2404.16388" className="text-sm">arXiv:2404.16388</A>
                 </div>
-                <div className="flex items-center justify-between p-3 rounded-lg bg-white/5 border border-white/10">
-                    <span className="text-sm font-medium">News Coverage</span>
+                <div className="flex items-center justify-between p-3 rounded-lg bg-muted/5 border border-white/10 dark:bg-white/5 dark:border-white/10 hover:bg-muted/10 dark:hover:bg-white/10 transition-colors">
+                    <span className="text-sm font-medium text-text">News Coverage</span>
                     <A to="https://www.icp.uni-stuttgart.de/news/news/SwarmRL-building-the-future-of-smart-active-systems/" className="text-sm">University of Stuttgart</A>
                 </div>
             </div>
@@ -67,7 +67,7 @@ export default function Research() {
 
             <div className="space-y-4 flex-grow">
                 <div className="space-y-1">
-                    <div className="text-sm font-semibold text-white/80">Physics Engine</div>
+                    <div className="text-sm font-semibold text-text/80 dark:text-white/80">Physics Engine</div>
                     <div className="flex items-center gap-2 text-sm text-muted">
                         <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                         Wrapper for <A to="https://swarmrl.github.io/SwarmRL.ai/pages/api/swarmrl.engine.espresso/">EspressoMD engine</A>
@@ -78,10 +78,10 @@ export default function Research() {
                     </div>
                 </div>
 
-                <div className="w-full h-px bg-white/10" />
+                <div className="w-full h-px bg-muted/10 dark:bg-white/10" />
 
                 <div className="space-y-1">
-                    <div className="text-sm font-semibold text-white/80">RL Protocol</div>
+                    <div className="text-sm font-semibold text-text/80 dark:text-white/80">RL Protocol</div>
                      <div className="flex items-center gap-2 text-sm text-muted">
                         <span className="w-1.5 h-1.5 rounded-full bg-green-400" />
                          <A to="https://swarmrl.github.io/SwarmRL.ai/pages/api/swarmrl.agents.actor_critic/">Actor–Critic agent</A>
