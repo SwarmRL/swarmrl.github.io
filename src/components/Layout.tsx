@@ -4,6 +4,7 @@ import { Outlet, NavLink, Link } from "react-router-dom";
 import { Container, NavItem } from "./ui";
 import ThemeToggle from "./ThemeToggle";
 import GitHubStars from "./GitHubStars";
+import logo from "../assets/logo.jpg";
 
 const links = [
   { to: "/overview", label: "Overview" },
@@ -27,7 +28,7 @@ export default function Layout() {
             <div className="flex items-center gap-8">
               {/* Logo */}
               <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                <img src="/logo.jpg" alt="SwarmRL Logo" className="h-8 w-auto rounded-md" />
+                <img src={logo} alt="SwarmRL Logo" className="h-8 w-auto rounded-md" />
                 <span className="font-semibold text-lg hidden sm:block">SwarmRL</span>
               </Link>
 
