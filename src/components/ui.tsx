@@ -26,7 +26,7 @@ export function Section({
 
 export function Card({ children, className = "" }: React.PropsWithChildren<{ className?: string }>) {
   return (
-    <div className={`rounded-2xl border border-white/10 dark:border-white/10 bg-white/5 dark:bg-white/5 p-6 ${className}`}>{children}</div>
+    <div className={`rounded-2xl border border-muted/20 dark:border-white/10 bg-muted/5 dark:bg-white/5 p-6 ${className}`}>{children}</div>
   );
 }
 

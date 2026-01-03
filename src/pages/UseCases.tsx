@@ -4,7 +4,7 @@ import { Section, Card, Muted, A, Container } from "../components/ui";
 export default function UseCases() {
   return (
     <>
-      <Section className="relative overflow-hidden bg-muted/5 dark:bg-white/5">
+      <Section className="relative overflow-hidden">
         <Container>
             <div className="max-w-3xl">
                 <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
