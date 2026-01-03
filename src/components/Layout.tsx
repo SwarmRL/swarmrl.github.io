@@ -1,12 +1,11 @@
 // src/components/Layout.tsx
 import { useState } from "react";
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet, NavLink, Link } from "react-router-dom";
 import { Container, NavItem } from "./ui";
 import ThemeToggle from "./ThemeToggle";
 import GitHubStars from "./GitHubStars";
 
 const links = [
-  { to: "/", label: "Home" },
   { to: "/overview", label: "Overview" },
   { to: "/use-cases", label: "Use Cases" },
   { to: "/demos", label: "Demos" },
@@ -27,10 +26,10 @@ export default function Layout() {
           <nav className="flex items-center justify-between gap-6">
             <div className="flex items-center gap-8">
               {/* Logo */}
-              <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Link to="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <img src="/logo.jpg" alt="SwarmRL Logo" className="h-8 w-auto rounded-md" />
                 <span className="font-semibold text-lg hidden sm:block">SwarmRL</span>
-              </a>
+              </Link>
 
               {/* Left: links */}
               <div className="hidden md:flex items-center gap-6">
