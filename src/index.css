@@ -1,9 +1,8 @@
 @import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
-
 /* Inter font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* Tailwind v4 design tokens */
 @theme {
