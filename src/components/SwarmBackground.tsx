@@ -46,7 +46,7 @@ export default function SwarmBackground() {
     const SEPARATION_FACTOR = 0.04; // Avoid crowding
     
     // Mouse
-    let mouse = { x: -1000, y: -1000 };
+    const mouse = { x: -1000, y: -1000 };
     const MOUSE_RADIUS = 150;
     const MOUSE_RADIUS_SQ = MOUSE_RADIUS * MOUSE_RADIUS;
 

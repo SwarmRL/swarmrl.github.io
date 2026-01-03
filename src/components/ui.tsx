@@ -12,7 +12,7 @@ export function Section({
   title,
   desc,
   as: Tag = "section",
-}: React.PropsWithChildren<{ className?: string; title?: string; desc?: string; as?: any }>) {
+}: React.PropsWithChildren<{ className?: string; title?: string; desc?: string; as?: React.ElementType }>) {
   return (
     <Tag className={`py-16 md:py-24 ${className}`}>
       <Container>
